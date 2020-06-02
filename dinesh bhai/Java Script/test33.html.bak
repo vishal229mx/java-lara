@@ -1,0 +1,20 @@
+<p id="p1">
+    I am  from para1<br/>
+    I am  from para1<br/>
+    I am  from para1<br/>
+	</p>
+	<hr/>
+	<p id="p2">
+    I am  from para2<br/>
+    I am  from para2<br/>
+    I am  from para2<br/>
+	</p>
+	<input type ="button" value = "Button" onclick="readParas()"/>
+
+	<script>
+	          function readParas()
+			  {
+                 alert(document.getElementByID("p1").innerHTML);
+                 alert(document.getElementByID("p2").innerHTML);
+	           }
+	</script>

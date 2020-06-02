@@ -1,0 +1,8 @@
+one is request object forword means last sending output 
+from a one servlet to make call to jsp and html
+if we are using a forword class is not required
+if using context dispatcher forword \ is required
+
+servlet5 give call to servlet6-:
+............
+response.sendRedirct("Servlet6")

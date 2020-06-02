@@ -1,0 +1,40 @@
+Finalize()
+
+
+//finalize() method is a protected method 
+//it should be used in the in  the sub class .. it cannot be used outside of the sub class
+//it is executing by garbage collector 
+//when it is executing-->>whenever object is removing from the memory finalize() executing by garbage collector
+//when object is removing / which obj is eligible to remove??
+//when object is becoming abondant then that object is eligible for garbage collection..
+//garbage collector removing that abondant object from the memory by calling finalize()..
+//which object is called as abondant-->> if obj doesnt have even a single referance variable then that is called as abondant obj.
+//live obj.-->> min. one ref variable.....//abondant obj.-->> no ref.variables
+//object class containing finalize()... that is available in every class... same is available in all object...
+//garbage collector once in a while coming to the heap memory..scanning entire heap memory for any abondant memory
+//if any abondant memory is available in the heap memory .. calling finalize() and removing from the memory
+
+
+-->>whenever last reference is removed at that time object is becoming abondant..
+-->>when object is removing by garbage collector---->>>> 
+we can not estimate when object is removing from the memory it is very uncertain 
+garbage collector coming to the memory once in a while to remove abondant obj from the memory
+
+//there is a way to making a request to garbage collector
+//if we make req. to garbage collector it may came immediately or
+  it may take sometime we cannot estimate when the garbage collector came for object removal
+
+//On any object,,garbage collector calling finalize method only max one time.. not more than one time-->>
+
+
+//if any abondant object got ressuracted while finalize() scanning for any abondant object and that ressuracted object doesnnt get
+removed.. and when next time garbage colector scanns for abondant object and that same object finds as abondant... then finalize() doesnot calls
+for that same object... that object will not be removed
+
+
+
+
+
+
+
+

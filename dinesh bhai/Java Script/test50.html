@@ -1,0 +1,17 @@
+<p id="p1"> initial data </p>
+<input type="button" value="print Object" onclick="printObject()"/>
+
+<script>
+     function printObject()
+	 {
+		 var emp = {
+			          firstName: "Dinesh",
+					  lastName: "Kumar",
+					  age: 28,
+					  weight: 75,
+					  permanent: true
+					  };
+		 var empData = emp.firstName + "," + emp.lastName + "," + emp.age + "," + emp.weight + "," + emp.permanent;
+		       document.getElementById("p1").innerHTML = empData;
+			   }
+</script>

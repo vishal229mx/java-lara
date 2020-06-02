@@ -1,0 +1,12 @@
+package com.lara;
+
+import java.io.Serializable;
+
+public class Person implements Serializable
+{
+
+	int age;
+	double weight = 57.5;
+}
+//serilizable and clonable both are marker interface
+//we are serilazable in person object 

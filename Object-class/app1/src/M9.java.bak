@@ -1,0 +1,13 @@
+class A
+{
+}
+class M9 
+{
+	public static void main(String[] args) 
+	{
+		A a1 = null;
+		String s1 = "some thing " + a1;
+		System.out.println(a1);
+		System.out.println(s1);
+	}
+}

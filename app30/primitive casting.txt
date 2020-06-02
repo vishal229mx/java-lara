@@ -1,0 +1,10 @@
+converting from one data type to another data type is called as casting..
+
+there are two types of castings--
+1. primitive casting
+2. derieved casting
+
+1.Primitive casting-converting from one numeric primitive to another numeric to another numeric primitive.
+                    In privitive casting two types available-
+		     1. Auto widery
+		     2. Explicit Narrowing

@@ -1,0 +1,19 @@
+class M32
+{
+	public static void  test(double ... y) 
+	{
+	}
+    public static void  test(double[] z) 
+	{
+	}
+}
+
+
+/*
+
+M32.java:6: error: cannot declare both test(double[]) and test(double...) in M32
+
+    public static void  test(double[] z)
+                        ^
+1 error
+*/

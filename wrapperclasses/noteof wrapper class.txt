@@ -1,0 +1,59 @@
+WRAPPER CLSSES
+
+for every primitive data type there is a corresponding wrapper class
+
+/*
+1.
+primitive data type                       wrapper class
+-------------------                       ---------------
+     byte                                        Byte
+     short                                       Short
+     int                                         Integer
+     long                                        Long
+     float                                       Float
+     double                                      Double
+     char                                        Character
+     boolean                                     Boolean
+
+
+
+2.java.lang
+every wrapper class are available in the java.lang package
+we dont need to import java.lang bcoz it is default package... so we dont need any import for wrapper classes
+
+3.final
+every wrapper class is a final class 
+we cannot devp a sub class of any wrapper class bcoz it is final
+
+3.serializable
+All wrapper class implementing serializable interface
+bcoz of implementing serializable interface...every wrapper object write into the file system
+
+5.comparable
+Every wrapper class implementing comparable interface
+bcoz of implementing comparable interface...every wrapper object eligible for sorting based on the content
+
+6.toString()
+In every wrapper class, Object class toString() is overrided
+Bcoz of this we can print content of the object through its reference variable
+
+7. hashCode() and equals()
+In every wrapper class,object class hashCode() and equals() both got overrided
+Bcoz of this we can identify duplicates based on the content.
+
+8.usage of wrapper classes
+  1.boxing->
+         boxing an unboxing operation is used to achieve
+  2.unboxing->
+  
+  3.String to primitive (except char datatype)->
+  
+  4. primitive to String->
+
+
+
+
+
+
+
+*/

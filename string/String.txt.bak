@@ -1,0 +1,180 @@
+.............
+  ||String||
+.............
+
+***String content and Object content both are stored in heap memory.
+***For String content small portion of heap memory is allocated.
+   No duplicates are allowed here .
+   It is called as String constraint port.
+***For Object content larger portion of heap memory is allocated.
+   this larger portion allocated for the Object is called non constarint port.
+
+String s1 = new String("abc");
+Here 2 String Object is creating.
+for "abc" lieteral one String Object is creating.
+by taking the reference of "abc" new Operator create anather String Object.
+
+String s1 = "abc";
+String s2 = "abc";
+here s1 nad s2 both are reffering to same Operator.
+but
+String s1 = new String("abc");
+String s2 = new String("abc");
+here s1 and s2 are not reffering the same Object.
+new Operator allways create a new Object duplicates are not allowed here.
+So for s1 reference new Operator create an Object.
+for s2 reference new Operator create anather Object so s1 != s2.
+.....................................................................................
+equals()
+.......
+	it checks the content only.
+	it won't bother about the memory allocation.
+	s1.equals(s2);
+but ==
+   ....
+	checks the memory allocation not not the content.
+length()
+........
+	String s1 = "patra";
+	             12345
+	in String length() is a method.
+	in array length is an attribute.
+	length() is count the total number of charetor in  a porticular String.
+	s1.length();
+	***it start counting from 1.
+""
+..
+	""is used to start the String and end the String in middle of the String ""can not be encorporated .
+	if you wanna go for "" in the middle of a String then you should go for escape charactor.
+	"..........\"kevin\"......"
+charAt()
+.........
+	String s1 ="Tribikram";
+		    012345678
+	char c1 = s1.charAt(3);
+	it will serch the charector allocated  for the 3rd position.
+	all the position of char is form 0 and it starts counting from left to rigth.
+	System.out.println(c1);
+	yoou will get the exact charactor who is in 3rd position i.e. b.
+indexOf()
+.........
+	String s1 = "patra tribikram from patra family";
+		     01234
+        int i = indexOf('t');
+	***indexOf will search the char in the String at print its number of position from  0.
+	   it will search from left to right and preffer the first Occurance of the charactor.
+	***you can search a single charector or a String
+	   't' "stra".
+	   but for String "" should be there .
+	***if exact charector is there then only it gives the result
+	   or it gives -1.
+	***if you wonna check from a specific index then 
+	   indexOf('l',5);
+	   it will search from 5th position onwords.
+	int i = indexOf('t',4);
+	***it will start serching the index of 't' from 4th index onwords.
+	int j = indexOf(' ');
+	it will return the index of first ' 'from left to right .
+	int j = indexOf(' ',8);
+	it will start searching ' ' from 8th index onwords from  left to right.
+	***if any abnormal condition occures means if it won't found 
+	the exact pattern enter in index it will return  -1.
+toCharArray()
+.............
+	String s1 = "barney";
+	char[] a1 = s1.toCharArray();
+	Assign the String content to a char[] array.
+substring(2,7)
+..............
+	String s1 = "hello world!"
+		   //0123456789
+	System.out.println(".."+s1.substring(2,7));
+	first limit of String is inclusive and 2nd limit is exclusive.
+	from 2nd index to 6th index.
+	System.out.println(".."+s1.substring(2));
+	if you are not provide 2nd limit it will take till the end.
+abnormal condition
+..................
+	String s1 = "patra";
+	System.out.println(s1.indexOf('z'));
+	if any abnormal condition occures,then it will return -1.
+	System.out.println(s1.charAt(10));
+	it will raise an Exception:
+	StringIndexOutOfBoundsException
+split()
+.......
+	String s1 ="abc;xyz;123;hello;test";
+	String[] splits = s1.split(";");
+	for (String x1 : splits)
+	{
+		System.out.print(x1);
+	}
+	it will remove that char which is inside the split("");
+	it may be a " " a ";" or any thing.
+startsWith()
+............
+	String s1 ="lara tech";
+	System.out.println(startWith("..."));
+	if ... is the first String of the String then it will return true
+	other wise it returns false.
+	the first String occurance should be proper.
+	even it returns true
+	when SOP(l);
+	when SOP(la);
+	when SOP(lar);
+endsWith()
+..........
+	String s1 ="lara tech";
+	System.out.println(endWith("..."));
+	if the last charector of the String is exactly same as 
+	the String provided in endWith() then it returns true.
+	even for last char it returns true
+	suppose tech is last String.
+	it returns true for
+	h
+	ch
+	ech
+	tech
+toUpperCase()
+.............
+	SOPln(s1.toUppercase);
+	It conver all the charector of the String to Upper case.
+toLowerCase()
+.............
+	SOPln(s1.toLowercase);
+	It conver all the charector of the String to Lower case.
++ Operator
+...........
+	String s1 ="lara";
+	String s1 + "tech";
+	SOPln(s1);//lara tech
+	it will add any thing in the existing String.
+	but for every expression you have to take result from left hand side.
+	s1 + "tech";
+	if there is no variable to take the changed (added String)
+	you will get compile time error.
+	***String are immutal,can not change onace it is created.
+	   for every modification(adding a String or Removing a String) 
+	   in the String a new String Object is createded.
+	   the old String Object never modifies.
+concat()
+........
+	String s1 ="lara";
+	s1 = s1.concat("tech");
+	concat() method is using + Operator internally. 
+	String s7 = "ja".concat("va");
+		     this.concat(arg);
+
+
+
+
+
+
+trim()
+......
+	String s1 = " abc xyz ";
+	s1.trim();
+	trim() remove while spaces before abc xyz after abc xyz. 
+	only leading and triling while spaces.
+	it can not be remove the while spaces in side the abc and xyz.
+	System.out.println(s1.trim().length());

@@ -1,0 +1,32 @@
+Cloning--
+--------------
+
+object class containing clone() mthod
+
+---------------
+
+protected Object clone() throws CloneNotSupportedException
+-------------
+   object class clone() - 
+1. it is protected 
+2. Object is return type..
+3. throws CloneNotSupportedException
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+Statements                                                 Checked exceptions
+---------------------------                               ------------------------------------
+
+1.Class.forName("")                   -------->            ClassNotFoundException
+
+2.File IO                             -------->            IOException, FileNotFoundException
+
+3.JDBC statements                     -------->            SQLException
+
+4.Threads
+   sleep, join, wait                  -------->            InterruptedException
+
+5.String -> Date
+  String -> Number                    -------->            ParseException
+
+6.cloning                             -------->             CloneNotSupportedException

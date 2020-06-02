@@ -1,0 +1,22 @@
+package com.lara;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class Employee
+{
+	
+	public static void main(String[] args) throws IOException
+	 {
+	 	
+	 	FileOutputStream fout = new FileOutputStream("emp.txt");
+	 	ObjectOutputStream out = new ObjectOutputStream(fout);
+	 	Employee e1 =  (Employee) in.readObject();
+	 	System.out.println(e1.age);
+	 	System.out.println(e1.weight);
+	 	System.out.println(e1.address.streetName);
+	 	System.out.println(e1.email);
+       	 	
+	  }
+}

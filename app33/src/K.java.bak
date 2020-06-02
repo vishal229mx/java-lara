@@ -1,0 +1,15 @@
+class K 
+{
+	final int i;
+}
+//final variable cannot be survived by a default value
+//final variable cannot be blank,,,we have to assign a value
+
+/*
+
+
+K.java:3: error: variable i not initialized in the default constructor
+        final int i;
+                  ^
+1 error
+*/

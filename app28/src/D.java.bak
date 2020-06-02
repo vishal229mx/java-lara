@@ -1,0 +1,8 @@
+interface D
+{
+	D()
+	{
+
+	}
+}
+//no concrete members are allowed in the inrterface

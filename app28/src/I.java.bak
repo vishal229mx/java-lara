@@ -1,0 +1,5 @@
+interface I
+{
+	int m;
+}
+//every interface attribute should be initilized

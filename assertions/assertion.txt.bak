@@ -1,0 +1,50 @@
+Assertions are introduced in JDK1.4
+
+
+before jdk1.4 we were able to use assert as a identifier after jdk1.4 assert become keyword
+there are two types of assert stmt available
+1.very simple assert stmt(VSA)
+  ex.. assert boolean_result;
+
+2.simple assert stmt(sa)
+  ex.. assert boolean_result : some_message;
+
+By default no assert stmt is executing--
+  in order to execute assert stmt we have to supply one VM(virtual Machine) argument-
+     ex-
+        -ea    (or)  -enableassertions ---->> command for enable asssert stmt
+
+
+	-da    (or)  -disableassertions ----->> command for disabling assert stmts
+
+
+
+	assert stmts enabling/disabling can be done in three different ways
+	1. execution wise
+	2. package and its sub packages wise
+	3. class wise
+
+Usage of assertion stmts--
+1. to rise assertion error whenever business rule is getting failed...vary similar to throw keyword
+we can use throw keyword for rising any type of exceptionn and we use assertion for rising assertion error.....
+
+assertion is a error type 
+
+Differences bt throw and assertion----------------
+1. In throw there is no chance of disable or enable
+    enabling and disabling rule for assert
+2. Optional for some people and mandatory for some other people then go for asserts.
+   to whom rule is optional let them run without arguments
+   to whom rule is mandatory then run with arg(-ea)
+
+3.By using throw keyword you can raise any error class name.
+    in case of assert you can not specify class name.
+     it can only raise one class that is assertion error.
+
+4. throw stmt always should be the last stmt of the current block
+    like break,continue,return stmts throw is the last stmt.
+
+    assert can be anywhere in the block..
+
+
+

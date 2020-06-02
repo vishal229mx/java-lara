@@ -1,0 +1,11 @@
+<body onload= "focusFirstFielid()">
+ <form>
+       First Name : <input type="text" name="firstName"/> <br/>
+       Last Name : <input type="text" name="lastName"/> <br/>
+	   ---------------<br/>
+	   ---------------<br/>
+	   ---------------<br/>
+	   ---------------<br/>
+	   ---------------<br/>
+	   </form>
+  </body>

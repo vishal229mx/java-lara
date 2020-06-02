@@ -1,0 +1,10 @@
+interface E
+{
+	{
+	}
+
+	static
+	{
+	}
+}
+//no IIB or SIB allowed in the interface

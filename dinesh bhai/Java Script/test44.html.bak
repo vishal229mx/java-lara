@@ -1,0 +1,43 @@
+<form>
+    State:<select name="state" onchange="populateDistricts()">
+	      <option value="pls">pls Select</option>
+	      <option value="kar">Karnataka</option>
+	      <option value="ap">Andhra</option>
+	      <option value="tn">Tamilnadu</option>
+		  </select> <br/><br/>
+	District : <span id="districts"></span> <br/>
+	</form>
+<span id="kar" style="visibility:hidden">
+  <select name="district">
+   <option value="blr">Banglore </option>
+   <option value="msr">Mysore </option>
+   <option value="bly">Ballary </option>
+   </select>
+</span>  
+<span id="ap" style="visibility:hidden">
+   <select name="district">
+      <option value="vj">Vijayvada </option>
+      <option value="kdp">Kadapa </option>
+      <option value="ctr">Chittor </option>
+   </select>
+</span>
+<span id="tn" style="visibility:hidden">
+   <select name="district">
+      <option value="chn">Chennai </option>
+      <option value="cbr">Coimbattur </option>
+      <option value="vlr">Velore</option>
+   </select>
+</span> 
+<span id="pls" style="visiblity:hidden"></span>
+
+
+<script>
+       function populateDistricts()
+	   {
+		   var myForm = document.forms[0];
+		   var state = myForm.state;
+		   var v1 = document.getElementById(state.value);
+		   var v2 = document.getElementById("districts");
+		   v1.innerHTML = v2.innerHTML;
+		}
+</script>

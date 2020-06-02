@@ -1,0 +1,20 @@
+<div id="d1">
+    I am  from para1<br/>
+    I am  from para1<br/>
+    I am  from para1<br/>
+	</div>
+	<hr/>
+	<span id="s1">
+    I am  from para2<br/>
+    I am  from para2<br/>
+    I am  from para2<br/>
+	</span>
+	<input type ="button" value = "Button" onclick="readParts()"/>
+
+	<script>
+	          function readParts()
+			  {
+                 alert(document.getElementById("d1").innerHTML);
+                 alert(document.getElementById("s1").innerHTML);
+	           }
+	</script>

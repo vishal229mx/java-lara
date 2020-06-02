@@ -1,0 +1,11 @@
+package com.lara;
+
+import java.io.Serializable;
+
+public class F implements Serializable
+{
+   int i;
+   //int j;
+   
+ 
+}

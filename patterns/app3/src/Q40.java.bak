@@ -1,0 +1,28 @@
+/*
+    1
+   321
+  54321
+ 7654321
+987654321
+*/
+
+
+
+class Q40
+{
+	public static void main(String[] args) 
+	{
+		for (int i=1;i<=5 ;i++ )
+		{
+			for (int j=1;j<=(5-i) ;j++ )
+			{
+				System.out.print(" ");
+			}
+     		for (int k=((2*i)-1);k>=1 ;k-- )   
+			{
+				System.out.print(k);
+			}
+          System.out.println();
+		}
+	}
+}

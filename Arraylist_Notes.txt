@@ -1,0 +1,71 @@
+Array list---
+-------------
+CREATION-
+1. ArrayList list = new Arraylist();-->> Creating an object to ArrayList  
+-------------------------------------------------------------------------------------------------------------
+ADDING-
+1. list.add(90); -->> Adding elements in arraylist 
+
+2. list.get(indexNo.); -->> Finding any values at any index  
+
+3. list.size(); -->> Size of ArrayList  
+
+4. list.add(2,"10") //("index","value") -->> Inserting values at any index  
+
+5. list.addAll(Anotherlist); -->> Adding all the elements from another ArrayList  
+
+6. list.addAll(1,list1); -->> We can also add another list at a specified index  
+
+7. Arraylist list1 = new Arraylist(list); -->> By providing Arraylist ref. of one ArrayList we can create another ArrayList obj including old list  
+-----------------------------------------------------------------------------------------------------------------
+REMOVING-
+1. Object obj = list.remove(3); -->> By using object class ref. we are removing value at a particular index  
+
+2. list.remove(new Integer(2)); -->> We can directly remove any value directly by  using wrapper class as arg  
+
+3. list.clear(); -->> By this command we can clear all the values of the list  
+
+4. list.removeAll(list1); -->> We are removing all the same values of list1 from list  
+
+5. list.retainAll(list1); -->> Here, all the same values of list1 remains and all extra values of list is removed by using retainAll,i.e. it only preserving the values of list1 and deletes all extra  values of list
+
+6. list.removeRange(2,6); -->> It removes all the indexed values in the range of given index  i.e. from index 2 to 5
+-----------------------------------------------------------------------------------------------------------------------
+UPDATING & READING-
+
+1. list.set(2,"abc"); -->> It sets the value at given index if it is already exist then repace  
+
+2. Collection.sort(list); -->> It sort the values in the ArrayList, i.e. it sort if data is of same type.. sort sting acc. to ascii
+
+3. Comparator ctr = Collections.reverseOrder(); -->> The reference of ctr of Comparator is used to Compare and reverseOrder() is used to reverse the given list  
+  3.1 Collections.sort(list,ctr); -->> In this method first sort then reverse the order the list  
+
+4.  list.add(new A(100)); -->> We can also add values of other classs objects by providinig object in the arg, i.e. it req to over ride toString() compulsary in this situation otherwise it returns memory address of ref... 
+
+5. -->> For sorting the string values of differnt class received by toString(),we have to override compareTo(Object obj) method of comparable interface 
+   5.1 -->> we can also able to sort 2 arg values with the help of comparable 
+   5.2 -->> by using comparator we can sort values of 1st and 2nd args. by implementing comparator interface by overriding compare(Object o1,Object o2) method
+
+6. int i = Collections.binarySearch(list,10); -->> we can also perform binary search through this method  
+
+7. Collections.max(list); -->> it retrives max value from the ArrayList  
+
+8. Collections.min(list); -->> it retrives min value from the ArrayList  
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

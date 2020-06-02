@@ -1,0 +1,48 @@
+<form>
+   Skills : 
+			<input type = "checkbox" name="skill" value="c" onclick="controlSkillController()"/>C &nbsp;
+            <input type = "checkbox" name="skill" value="cpp" onclick="controlSkillController()"/>C++ &nbsp;
+            <input type = "checkbox" name="skill" value="orcl" onclick="controlSkillController()"/>Oracle &nbsp;
+            <input type = "checkbox" name="skill" value="java" onclick="controlSkillController()"/>Java &nbsp;
+            <input type = "checkbox" name="skill" value="ng" onclick="controlSkillController()"/>Angular &nbsp;
+            <input type = "checkbox" name="skill" value="hadoop" onclick="controlSkillController()"/>Hadoop &nbsp;
+            <input type = "checkbox" name="skill" value=".net" onclick="controlSkillController()"/>.Net &nbsp;
+            <input type = "checkbox" name="skill" value="php" onclick="controlSkillController()"/>PHP <br/> 
+   Select All Skills:
+     <input type="checkbox" name="skillsController" onclick="selectAll()"/>
+    
+</form>
+
+<script>
+         function selectAll()
+		 {
+			 var myForm = document.forms[0];
+			 var skillsController = myForm.skillsController;
+			 var skill = myForm.skill;
+			 
+			     for (var i=0;i<skill.length;i++)
+			    {   
+
+				 skill[i].checked = skillsController.checked;
+			    }	 
+		  }
+		  function controlSkillController()
+		 {
+			 var myForm = document.forms[0];
+			 var skillsController = myForm.skillsController;
+			 var skill = myForm.skill;
+			 var status = true;
+			 
+			     for (var i=0;i<skill.length;i++)
+			    {   
+
+				if(!skill[i].checked)
+				{
+					status = false
+					break;
+					}
+			    }	 
+				skillsController.checked = status;
+		  }
+
+</script>

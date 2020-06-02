@@ -1,0 +1,25 @@
+class B 
+{
+	public static void main(String[] args) 
+	{
+		final int i; 
+		i = 10;
+		int j = 20;
+		System.out.println(i);
+		System.out.println(j);
+		i = 10;//attempting to reassing giving compile time error
+		j = 20;
+		System.out.println(i);
+		System.out.println(j);
+	}
+}
+
+
+/*
+
+
+B.java:10: error: variable i might already have been assigned
+                i = 10;//attempting to reassing giving compile time error
+                ^
+1 error
+*/

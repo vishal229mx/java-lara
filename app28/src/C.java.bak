@@ -1,0 +1,11 @@
+interface C
+{
+	
+	void test()
+	{
+	
+	}
+
+}
+
+//inside a interface we cannot develop any constructors and defined method

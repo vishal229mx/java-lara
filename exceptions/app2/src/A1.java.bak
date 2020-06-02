@@ -1,0 +1,19 @@
+class A1
+{
+	
+	static void test(boolean flag) 
+	{
+		if(flag)
+		{
+			System.out.println("A");
+		 //return 10;
+		}
+	}
+
+//while calling test method flag value is false if stmt is not execution
+  public static void main(String [] args)
+   {
+        test(true); 
+    }
+	
+}

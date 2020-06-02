@@ -1,0 +1,12 @@
+class K
+{
+	static int x;
+	public static void main(String[] args) 
+	{
+		System.out.println(x);
+		System.out.println(K.x);
+		K k1 = new K();
+		System.out.println(k1.x);
+	}
+}
+//static members can be used in 3 different ways

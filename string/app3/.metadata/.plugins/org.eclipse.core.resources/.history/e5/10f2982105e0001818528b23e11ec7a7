@@ -1,0 +1,14 @@
+package com.lara;
+
+import java.io.Serializable;
+
+public class F implements Serializable
+{
+	public static long serialVersionUID = 1000;
+   int i;
+   //int j;
+   
+ 
+}
+//if a tall class is implementing serilizable inside class compiler genrating one serialversionid 
+//there compiler won't be 

@@ -1,0 +1,22 @@
+class G 
+{
+	public static void main(String[] args) 
+	{
+		try
+		{
+		    //several stmts
+		}
+		catch (Throwable ex)
+		{
+		}
+		catch (Exception ex)
+		{
+		}
+	    catch (RuntimeException ex)
+		{
+		}
+	    catch (ArithmeticException ex)
+		{
+		}
+	}
+}

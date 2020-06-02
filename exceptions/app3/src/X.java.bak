@@ -1,0 +1,13 @@
+class A
+{
+	A() 
+	{
+	}
+}
+class X extends A
+{
+public static void main(String[] args) throws ClassNotFoundException 
+	{
+		System.out.println("done");
+	}
+}

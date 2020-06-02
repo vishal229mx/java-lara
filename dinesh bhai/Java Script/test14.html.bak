@@ -1,0 +1,10 @@
+<form action="success.html" name="myForm">
+   Education : 
+			<select name="education">
+			<option value="">Please Select </option>
+			<option value="be">BE</option>
+			<option value="mca">MCA</option>
+			<option value="mba">MBA </option>
+			</select> <br/>
+   <input type = "submit" value="Submit" onclick="return validate()"/>
+</form>

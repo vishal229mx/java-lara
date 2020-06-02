@@ -1,0 +1,19 @@
+public class System
+{
+	public static PrintStream out;
+	static
+	{
+	   out = //some how intilizing out to the console
+	}
+	public static void setOut(PrintStream p)
+	{
+	out = p;
+	}
+	    .............
+		.............
+		.............
+		.............
+		.............
+		.............
+   
+}

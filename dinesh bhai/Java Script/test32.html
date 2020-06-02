@@ -1,0 +1,17 @@
+<input type="text" onblur="someCall(this)" name="firstName"/> <br/>
+<input type="text" onblur="someCall(this)" name="lastName"/> <br/>
+<input type="text" onblur="someCall(this)" name="age"/> <br/>
+<select name="education" onchange="someCall(this)">
+					<option value="be">BE</option>
+					<option value="be">ME</option>
+					<option value="be">MCA</option>
+</select>
+
+<script>
+        function someCall(field)
+		{
+			alert(field.name);
+			alert(field.value);
+
+         }
+</script>

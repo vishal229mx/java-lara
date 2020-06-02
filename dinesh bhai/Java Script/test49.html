@@ -1,0 +1,56 @@
+<form>
+   
+   Email : 
+      <input type="text" name="email"> 
+	  <span style="color:red" id = "emailError"></span> <br/>
+      <input type="button" onclick="validate()" value="Validate Email"/> <br/>
+	  
+
+</form>
+
+<script>
+      function validate()
+	  {
+		  var value = document.forms[0].email.value;
+          var emailError = document.getElementById("emailError");
+		  emailError.innerHTML = "";
+		  //check @ occurence
+		   var atIndex = value.indexOf('@');
+		  if(atIndex == -1)
+		  {
+              emailError.innerHTML = value+"Should contain @";
+		  }
+		  //check multiple @ occurence
+		   var secondAt = value.indexOf('@', atIndex + 1);
+		  if(secondAt != -1)
+		  {
+              emailError.innerHTML = value+ "Should not contain multiple @";
+		  }
+		  //check dot(.) occurence after @
+		   var dotIndex = value.indexOf('.', atIndex + 1);
+		  if(dotIndex == -1)
+		  {
+              emailError.innerHTML = value+"min one dot(.) after @";
+		  }
+		  //check for invalid occurence like .@ || @. || ..
+		   
+		  if(value.indexOf(".@") != -1 || value.indexOf("@.") != -1 || value.indexOf("..") != -1)
+		  {
+              emailError.innerHTML = value+"invalid";
+		  }
+		  //first and last chars should be only alphabates
+		   //[a-z] ==> 97 to 122
+		   //[A-Z] ==> 65 to 90
+		 var firstCharAscii = value.charCodeAt(0);
+		 var lastCharAscii = value.charCodeAt(value.length-1);
+		 if(! (firstCharAscii >= 97 && firstCharAscii <=122) || (firstCharAscii >= 65 && firstCharAscii <=90) )
+          {
+			  emailError.innerHTML = value+"should start with only alphabates";
+			  }
+          var lastCharAscii = value.charCodeAt(value.length-1);
+		   if(! (lastCharAscii >= 97 && lastCharAscii <=122) || (lastCharAscii >= 65 && lastCharAscii <=90) )
+          {
+			  emailError.innerHTML = value+"should end with only alphabates";
+			  }
+	 }
+</script>

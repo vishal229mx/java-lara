@@ -1,0 +1,8 @@
+abstract class C 
+{
+	 void test() 
+	{
+		
+	}
+	void test2();
+}

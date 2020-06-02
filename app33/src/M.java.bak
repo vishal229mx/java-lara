@@ -1,0 +1,10 @@
+class M 
+{
+	final int i;
+
+	M()
+	{
+		i = 20;
+	}
+}
+//before creation of object final variable should be assigned

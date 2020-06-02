@@ -1,0 +1,12 @@
+package com.lara;
+
+import java.io.Serializable;
+
+public class F implements Serializable
+{
+   int i;
+   //int j;
+   
+ 
+}
+//if a tall class is implementing serilizable inside class compiler genrating one serialversionid 

@@ -1,0 +1,14 @@
+abstract class A
+{
+	abstract final void test1();
+}  
+class M2
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}
+//we cannot define method as both abstract and final 
+//abstract means it shhould implement in the sub class 
+//and final means it should not be implemet in the sub class

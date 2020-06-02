@@ -1,0 +1,10 @@
+package com.lara;
+
+public class B extends A
+{
+  int j;
+  B()
+  {
+	  System.out.println("B()");
+  }
+}

@@ -1,0 +1,16 @@
+<form>
+   State:
+        <select name="state" onclick="checkstate()">
+		   <option value="kar">Karnataka</option>
+		   <option value="ap">Andhra Pradesh</option>
+		   <option value="tn">Telangana</option>
+		   </select>
+
+</form>
+
+<script>
+         function checkstate()
+		 {
+			 alert(document.forms[0].state.value);
+			 }
+</script>

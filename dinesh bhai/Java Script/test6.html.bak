@@ -1,0 +1,30 @@
+<form action = "success.html">
+     Parameter : <input type="text" name="param1"/> <br>
+     One more Parameter : <input type="text" name="param2"/> <br>
+    <input type = "submit" value="submit"
+	                      onclick="return validate()"/>
+</form>
+
+
+<script>
+    function validate()
+	{
+       if(document.forms[0].param1.value.length == 0)
+	   {
+	       alert("pls enter parameter");
+		   document.forms[0].param1.focus();
+		   return false;
+	   }
+	   if(document.forms[0].param2.value.length == 0)
+	   {
+	       alert("pls enter one more  parameter");
+		   document.forms[0].param2.focus();
+		   return false;
+	   }
+
+	}
+
+
+
+
+</script>

@@ -1,0 +1,23 @@
+package com.lara;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class M10
+{
+  public static void main(String[] args) throws IOException
+{
+	Person p1 = new Person();
+	p1.age= 25;
+	
+	FileOutputStream fout = new FileOutputStream("person.txt");
+	ObjectOutputStream out = new ObjectOutputStream(fout);
+	out.writeObject(p1);
+	out.flush();
+	out.close();
+	System.out.println("done");
+	
+}
+}
+//state is nothing but attribute value state is object

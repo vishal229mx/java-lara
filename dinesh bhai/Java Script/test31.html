@@ -1,0 +1,15 @@
+<form>
+<select onchange="findValue()" name="test">
+         <option value="h1">Hello1</option>
+         <option value="h2">Hello2</option>
+         <option value="h3">Hello3</option>
+</select>
+</form>
+<script>
+       function findValue()
+	   {
+		   var v1 = document.forms[0].test.value;
+		   alert(v1);
+		}
+
+</script>

@@ -1,0 +1,10 @@
+package com.lara;
+
+public class A implements Serilizable
+{
+   int i;
+   A()
+   {
+	   System.out.println("A()");
+   }
+}

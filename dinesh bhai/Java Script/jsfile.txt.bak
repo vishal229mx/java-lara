@@ -1,0 +1,28 @@
+date 24-8-2018-----------------------------------------
+js code is mainlu use foor validating customer input or data
+js code develop oin script tag
+whenever we develop fuction use function keyword
+alert is used for warning
+alert("pls enter parameter");
+document is one of the builtin obj
+inside the document forms is an array
+forms[0]-firsrt form
+forms[1]-Second form
+So on....
+
+var is keyword use for making any type of variable
+
+var gender (radio group) is act as a array variable
+
+
+selected property of select tag
+multiple property for multiple selection in select tag
+
+outside submit shoulld not use return
+
+
+onload event is for Body tag
+
+onchange event of select very imp
+
+JS function can take any no. of arguments bt evry arg should not be with any datatypes 

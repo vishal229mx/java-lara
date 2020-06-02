@@ -1,0 +1,25 @@
+@FunctionalInterface
+interface A
+{
+	int test(int i, int j);
+	int test(int i);
+} 
+class M11
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("done");
+	}
+}
+
+
+/*
+
+
+M11.java:1: error: Unexpected @FunctionalInterface annotation
+@FunctionalInterface
+^
+  A is not a functional interface
+    multiple non-overriding abstract methods found in interface A
+1 error
+*/

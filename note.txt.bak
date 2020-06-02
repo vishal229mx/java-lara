@@ -1,0 +1,33 @@
+exceptions
+assertions
+app1 :  Hello World examples
+app2 :  Literals, println and print methods
+app3 :  Local variables
+app4 :  unary operators
+app5 :  boolean operator
+app6 :  if block
+app7 :  else block
+app8 :  switch cases
+app9 :  ternary operator
+app10 :  for loop
+app11 :  for-each for loop(enhanced for loop)
+app12 :  while loop
+app13 :  d0-while loop
+app14 :  methods
+app15 :  methods continuous......
+app16 :  static
+app17 :  static initialization blocks (SIB)
+app18 :  static members usage in different classes
+app19 :  static control flow
+app20 :  class-object
+app21 :  constructors
+app22 :  IIB(instance initializing block)
+app23 :  inheritance
+app24 :  packages
+app25 :  private access level
+app26 :  default, protected and public access levels
+app27 :  abstract classes
+app28 :  interface
+app29 :  method overloading and overriding
+app30 :  primitive casting
+app31 :  derived casting

@@ -1,0 +1,21 @@
+package com.lara;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.File;
+
+
+public class M1 {
+   public static void main(String[] args) throws IOException
+   {
+	File f1 = new File("test.txt"); 
+	FileWriter fout = new FileWriter(f1);
+	fout.write("Hello to all");
+	fout.write("Hello to all");
+	fout.write("Hello to all");
+	fout.write("Hello to all");
+	fout.flush();
+	fout.close();
+	System.out.println("done");
+}
+}

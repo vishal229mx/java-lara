@@ -1,0 +1,47 @@
+/*
+
+   D
+  CD
+ BCD
+ABCD
+ BCD
+  CD
+   D
+
+*/
+
+
+
+class Q62
+{
+	public static void main(String[] args) 
+	{  
+		char a = 'D';
+		for (int i=3;i>=1 ;i--,a--)
+		{
+			for (int j=i;j>=1 ;j--)   
+			{
+				 System.out.print(" ");
+			}
+			for (int j=i;j<=3 ;j++,a++)   
+			{
+				 System.out.print(a);
+			}
+            a = 'D';
+          System.out.println();
+		}
+		
+		for (int i=0;i<=3 ;i++)
+		{
+			for (int j=i;j>0 ;j--)   
+			{
+				 System.out.print(" ");
+			}
+         	for (int j=i;j<=3 ;j++)   
+			{
+				 System.out.print(j);
+			}
+          System.out.println();
+		}
+	}
+}

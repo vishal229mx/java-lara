@@ -1,0 +1,40 @@
+COLLECTION-API
+------------------------------------------------------------------------------------
+collection api -- available in java.util package
+updating
+removing
+searching
+sorting all can do in collection api
+
+if we are not using collection api & maintaing elements through arrays is not easy..
+(by using collection api managing data is lot easier...)
+-----------------------------------------------------------------------------------------
+entire collection  api divided into 4 parts/containers--
+                                                                                                                              
+1. List(elements are storing in the index..main significance of list is indexing or ordering)   
+   1.1. ArrayList(list type elements indexing and ordering)
+    
+2. Queue(FIFO opposite of queue is stack.. bt we can develop stack also..whenever we are maintaining queue type ..we need queue type collection api.. fifo and lifo is gurantee bt indexing is not)
+     (no indexing and ordering in map)
+    2.1. LinkedList
+    2.2. PriorityQueue
+
+3. Set(only for chossing a container.. duplicates will not be allowed in the set..set is only for unique elements..we have to supply  the logic to how to identify duplicates.. we have hashcode() and equals() used)
+     (no indexing and ordering in map)
+    3.1 HashSet
+
+4. Map(if we want a container elements and mapping key...every element mapping with a key...A container where key value mapping will be stored is map)
+     (no indexing and ordering in map)
+     4.1 HashMap
+
+---------------------------------------------------------------------------------------------------------------
+*For all sorting is very important..
+
+through comparable and comaparator are two important methods which 
+-----------------------------------------------------------------------------------------------------------------
+some common operations for all types-
+1. add
+2. read
+3. update
+4. delete
+

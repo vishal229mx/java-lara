@@ -1,0 +1,9 @@
+In the same inheritance .. converting from one derieved data type to another data type.is called derieved casting.......
+
+Under derieved datatypes there are 2 types of castings--
+   1. Autoupcasting(automatically up casting)
+   2. explicit downcasting.
+
+
+Auto upcasting-->> while assigning a subclass type to super class we dont do  any kind of conversion compiler do automatically 
+

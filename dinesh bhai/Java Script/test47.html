@@ -1,0 +1,43 @@
+<form>
+   First Name : <input type="text" name="firstName"/><br/> 
+      <input type="button" value="Check Mathods" onclick="expimentMethods()"/>
+	  </form>
+
+<script>
+       function expimentMethods()
+	   {
+		   var value = document.forms[0].firstName.value;
+		   var length =value.length;
+		   console.log("Length:"+ length);
+		   var firstChar = value.charAt(0);
+		    console.log("First Char:"+ firstChar);
+			var lastChar = value.charAt(length-1);
+		    console.log("Last Char:"+ lastChar);
+
+			var indexOfFirstSpace = value.indexOf(' ');
+		    console.log("Location of First Space:"+ indexOfFirstSpace);
+
+			var indexOfA = value.indexOf('A');
+		    console.log("Location of First A:"+ indexOfA);
+
+			var lastIndexOfA = value.lastIndexOf('A');
+		    console.log("Location of last A:"+ lastIndexOfA);
+			
+			
+			  var splits=value.split(' ');
+			  console.log("All splits");
+			  for(var j=0;j<splits.length;j++)
+			  {
+				  console.log(splits[j]);
+				  }
+             var s1= value.substring(0,4);
+			 console.log("First 4 chars:"+s1);
+			 var s2= value.substring(4,7);
+			 console.log("456chars:"+s2);
+			var s3= value.substring(5);
+			 console.log("from 5th Char onwards:"+s3);
+
+
+		   }
+</script>
+

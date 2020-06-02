@@ -1,0 +1,4 @@
+ 
+        <input type="text" onkeyup="alert('key up')" /> <br/>
+        <input type="text" onkeydown="alert('key down')"/>
+      

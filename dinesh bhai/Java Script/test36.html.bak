@@ -1,0 +1,15 @@
+<p id="p1">initial para1 </p>
+<p id="p2">initial para2 </p>
+	<input type ="button" value = "Change Styles" onclick="changeStyles()"/>
+
+	<script>
+	          function changeStyles()
+			  {
+				  var v1 = document.getElementById('p1').innerHTML;
+				  var v2 = document.getElementById('p2').innerHTML;
+                  v1.style.fontSize="30px";                 
+                  v1.style.color="blue";                 
+                  v2.style.fontSize="50px";                 
+                  v2.style.color="red";                 
+	           }
+	</script>
